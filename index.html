@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		titre exemaple data binding
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript" src="myApp.js"></script>
+</head>
+<body >
+	<div ng-app="myApp">
+		<div ng-controller="exemplctrl1">
+			<input ng-model="age"/>
+			<span >Vous etes 
+				<b ng-bind="majeurOrMineurText()"></b>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
