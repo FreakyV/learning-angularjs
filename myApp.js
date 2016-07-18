@@ -11,3 +11,12 @@ myApp.controller("exemplctrl1", function($scope){
 	};
 
 });
+
+
+var app = angular.module("app",[]);
+app.controller("myController", function($scope){
+	console.log('test2');
+	$scope.showContent = true;
+});
+
+angular.bootstrap(document.getElementById("app2"),['app']);
